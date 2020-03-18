@@ -1,0 +1,70 @@
+body {
+  font-family: 'Gochi Hand', cursive;
+  margin: 20px;
+  border: black 5px;
+  background-image: url("img/background.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  display: flex;
+  padding-top: 75px;
+}
+
+ol, ul {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgba(0,0,0,0);
+  border: 1px solid rgba(255,255,255,0.1);
+  float: left;
+  font-size: 32px;
+  font-weight: bold;
+  color: #dddddd;
+  line-height: 34px;
+  height: 68px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 68px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.gameStatus {
+  color: #dddddd;
+  font-size: 2em;
+  text-align: center;
+}
+.btn{
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.5em;
+  border-radius: 5px;
+  box-shadow: none;
+
+}
